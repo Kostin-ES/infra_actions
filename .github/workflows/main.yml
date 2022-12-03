@@ -60,7 +60,7 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
-            tags: zay1ats/infra_actions:v1:latest
+            tags: ${{ secrets.DOCKER_USERNAME }}infra_actions:latest
 
   deploy:
       runs-on: ubuntu-latest
